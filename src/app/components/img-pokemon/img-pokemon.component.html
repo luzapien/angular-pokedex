@@ -4,5 +4,12 @@
     <img class="imageContainer" *ngIf="pokemon" src="{{ pokemon.sprites.back_default }}" alt="{{ pokemon.name }}" />
   </div>
   <h2 class="pokemonName" *ngIf="pokemon">{{ pokemon.name | titlecase }}</h2>
+  <div class="gridContainer">
+    <div class="mainInformationContainer">
+      <h3  class="mainInformation"  *ngFor="let type of pokemon?.types">Type:{{type.type.name | titlecase}}</h3>
+      <h3 *ngIf="pokemon" class="mainInformation">Height:{{pokemon.height}}'</h3>
+      <h3 *ngIf="pokemon" class="mainInformation">Weight:{{pokemon.weight}}lb</h3>
+    </div>
   <p class="description" *ngIf="pokemon">{{description}}</p>
+</div>
 </div>

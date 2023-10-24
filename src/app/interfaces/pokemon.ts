@@ -309,15 +309,6 @@ export interface Stat {
   stat: Stat;
 }
 
-export interface Type {
-  slot: number;
-  type: TypeDetail;
-}
-
-export interface TypeDetail {
-  name: string;
-  url: string;
-}
 
 export interface Generation {
   name: string;
@@ -349,4 +340,13 @@ export interface Pokemon {
   stats: Stat[];
   types: Type[];
   past_types: PastType[];
+}
+export interface Type {
+  slot: number;
+  type: TypeDetail;
+}
+
+export interface TypeDetail {
+  name: string;
+  url: string;
 }

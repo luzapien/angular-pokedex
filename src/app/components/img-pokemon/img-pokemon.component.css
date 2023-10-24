@@ -25,7 +25,22 @@
 
 .pokemonName {
   text-align: center;
+  font-size: 1.5rem;
 }
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+}
+/* .mainInformationContainer {
+  display: flex;
+  justify-content: space-between;
+  margin:20px;
+} */
+.mainInformation {
+  font-size: .8rem;
+}
+
 .description {
   text-align: justify;
   margin: 10px;

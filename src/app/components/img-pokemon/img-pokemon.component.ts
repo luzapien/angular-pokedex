@@ -18,10 +18,11 @@ export class ImgPokemonComponent implements OnChanges{
     if (this.pokemon) {
       this.pokemonService.getDescriptionById(this.pokemon?.id).subscribe({
         next: (resp: Description) => {
+          console.log(resp)
           const flavor_text = resp.flavor_text_entries;
           const text = flavor_text.find((flavor_text) => flavor_text.language.name === 'en')
           this.description = text?.flavor_text;
-          console.log(this.description)
+          // console.log(this.description)
         }
       })
     }
