@@ -1,0 +1,21 @@
+.mainCotainer{
+  height: calc(100vh - 110px);
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  position: relative;
+}
+
+app-img-pokemon{
+  margin: 0 80px;
+}
+/* #card{
+  border: 2px solid;
+  border-radius: 20px;
+  height: 30px;
+  text-align: center;
+} */
+.listPokemonsContainer{
+  max-height: 80%;
+  overflow-y: scroll;
+}

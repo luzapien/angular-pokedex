@@ -1,0 +1,7 @@
+<div class="listContainer">
+  <div class="card" (click)="clicked.emit(pokemonId)">
+    <img class="pokemonImage" src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{pokemonId}}.png'>
+    <span>No{{pokemonId}}</span>
+    <span>{{data?.name | titlecase}}</span>
+  </div>
+</div>

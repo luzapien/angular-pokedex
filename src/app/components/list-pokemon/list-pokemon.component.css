@@ -1,0 +1,22 @@
+.listContainer{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.card{
+  border: 2px solid;
+  border-radius: 20px;
+  display:flex;
+  justify-content: space-between;
+  margin: 5px;
+  height: 40px;
+  align-items: center;
+  padding: 0 20px;
+}
+.card:hover{
+  cursor: pointer;
+}
+.pokemonImage {
+  height: 50px;
+  padding: 2px;
+}
