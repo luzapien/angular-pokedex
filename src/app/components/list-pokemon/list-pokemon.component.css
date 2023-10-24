@@ -1,7 +1,7 @@
 .listContainer{
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 80%;
 }
 .card{
   border: 2px solid;
@@ -12,6 +12,7 @@
   height: 40px;
   align-items: center;
   padding: 0 20px;
+  background-color: #ffb347;
 }
 .card:hover{
   cursor: pointer;
@@ -19,4 +20,12 @@
 .pokemonImage {
   height: 50px;
   padding: 2px;
+}
+.number, .name {
+  font-size:1rem;
+}
+
+.name{
+  width: 80px;
+  margin:20px;
 }

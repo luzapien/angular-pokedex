@@ -1,5 +1,8 @@
 <div class="container">
-  <img class="imageContainer" *ngIf="pokemon" src="{{ pokemon.sprites.front_default }}" alt="{{ pokemon.name }}" />
-  <h2 class="pokemonName" *ngIf="pokemon">Nombre:{{ pokemon.name }}</h2>
+  <div class="imagesContainer">
+    <img class="imageContainer" *ngIf="pokemon" src="{{ pokemon.sprites.front_default }}" alt="{{ pokemon.name }}" />
+    <img class="imageContainer" *ngIf="pokemon" src="{{ pokemon.sprites.back_default }}" alt="{{ pokemon.name }}" />
+  </div>
+  <h2 class="pokemonName" *ngIf="pokemon">{{ pokemon.name | titlecase }}</h2>
   <p class="description" *ngIf="pokemon">{{description}}</p>
 </div>
